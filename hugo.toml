@@ -1,0 +1,28 @@
+baseURL = 'https://adrianaguevara.com/'
+locale = 'en-us'
+title = 'Adriana Guevara'
+theme = "celadon" 
+
+[params]
+#  description = "Providing Spanish translation and interpreting services in the Tri-valley for over 10 years"
+#  email = "ag30_2000@yahoo.com"
+#  location = "Pleasanton, CA"
+  favicon = "favicon.ico"
+
+[params.homepage]
+  sections=["about"]
+
+[params.homepage.about]
+  enable=true
+  layout="hero"
+  title="About"
+
+[[cascade]]
+  layout = "single"
+  [cascade._target]
+    path = "/**"
+    kind = "page"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
